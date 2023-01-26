@@ -22,37 +22,43 @@ const sendMail = (email: string, name: string) => {
           Greetings!
           
           <br /><br />
-          Hope this email finds you well. I am Shujaut Bader, writing to you on
-          behalf of the Sir Syed Global Scholar Award (SSGSA) Mentorship and
-          Applications Team to thank you for your continued support of our
-          mentorship and scholarship program over the last few years. With your
-          help and support, the organization has been able to place ~120 AMU
-          students globally in various universities and research institutes. As
-          the program continues to grow, we are in need of your support now more
-          than ever.
-          <br />
-          Please visit our website to know more about the recent developments
-          and program highlights: http://ssgsa.us/index.php
+          Hope this email finds you well. I am Kashif Ahmad, writing to you on
+          behalf of the Sir Syed Global Scholar Award (SSGSA) Applications Team
+          to thank you for your continued support of our mentorship and
+          scholarship program over the last few years. With your help and
+          support, the organization has been able to place ~145+ AMU students
+          globally in various universities and research institutes.  As the
+          program continues to grow, we are in need of your support now more
+          than ever. Please visit our website to know more about the recent
+          developments and program highlights: http://ssgsa.us.
 
           <br /><br />
-          The applications for this session are open, and are due by March 15,
-          2021. We are planning to send out the applications for review by
-          Friday, March 26, 2021. <b>By replying to this email (preferably
-          before March 15th), please confirm if you would be willing to serve
-          as a reviewer for this session.</b> If you express interest in
-          serving as our reviewer, we will follow-up with another email with
-          login credentials to our reviewer's portal. You would have ~15 days
-          to review approximately 15 applications at most.
+          The applications for this session are open, and are due by February
+          14, 2023. We are planning to send out the applications for review by
+          February 24, 2023. <b>Please confirm if you are willing to serve as a
+          reviewer for this session by clicking on the link below.</b>
 
+          <br /><br />
+          <b>Link: https://www.ssgsa.us/reviewer/confirmation/${email}</b>
+          
+          <br /><br />
+          You would have around 15 days to review approximately 15 applications
+          at most. In order to assist you through the review process, SSGSA
+          Applications Team will also be organizing a workshop on Feb 18, 2023.
+          The attendance is optional in it, but highly encouraged. The details
+          will be sent once we get your kind approval.
+          
           <br /><br />
           Please do not hesitate to coordinate with us, should you have any
-          questions about the review process. You can either write to Chair at
-          chair@ssgsa.us or at contact@ssgsa.us
-          
+          questions about the review process. You can either write to me at
+          kkashif@alumni.purdue.edu or the Chair at chair@ssgsa.us.
+
           <br /><br />
           Thanks,
           <br />
-          SSGSA Team
+          Kashif Ahmad
+          <br />
+          On behalf of SSGSA Applications Team
         </p>
       </body>
     </html>
@@ -61,8 +67,9 @@ const sendMail = (email: string, name: string) => {
   let mailDetails = {
     from: 'devs.ssgsa@gmail.com',
     to: email,
-    cc: 'devs.ssgsa@gmail.com',
-    subject: 'Test Mail for Reviewer Confirmation',
+    cc: 'chair@ssgsa.us',
+    replyTo: 'chair@ssgsa.us',
+    subject: '[SSGSA] Request to Review Applications',
     html: template,
   };
   
