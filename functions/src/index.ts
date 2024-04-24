@@ -28,39 +28,48 @@ const sendRevConfirmationMail = (email: string, name: string) => {
           Greetings!
           
           <br /><br />
-          Hope this email finds you well. I am Kashif Ahmad, writing to you on
-          behalf of the Sir Syed Global Scholar Award (SSGSA) Applications
-          Team. We thank you for being associated with the SSGSA for the past
-          few years. 
+          On behalf of the Sir Syed Global Scholar Award (SSGSA), we extend our
+          sincere appreciation for your steadfast support of our mentorship and
+          scholarship initiatives throughout recent years.
 
           <br /><br />
-          We are currently accepting applications, and expect to send those out
-          for review by February 24, 2023. <b>If you are willing to serve as a
-          reviewer for this session, please accept the invitation through the
-          link provided below.</b>
+          We are reaching out to you today to extend an invitation to
+          participate as a reviewer for the upcoming session of the SSGSA.
+          Applications for this session are now open and are set to close on
+          <b>March 11, 2024</b>. Our aim is to dispatch the applications for
+          review by <b>March 18, 2024</b>. Your confirmation to serve as a
+          reviewer for this session would be greatly valued.
 
           <br /><br />
-          <b>Link: https://www.ssgsa.us/reviewer/confirmation/${email}</b>
+          To confirm your willingness to participate, kindly click on the link
+          provided below:
+
+          <br /><br />
+          <b>Reviewer Confirmation Link:
+          https://www.ssgsa.us/reviewer/confirmation/${email}</b>
           
           <br /><br />
-          You would have around 15 days to review approximately 15 applications
-          (at most). In order to assist you through the review process, SSGSA
-          Applications Team will also be organizing an orientation session on
-          Feb 18, 2023. You attendance is highly encouraged so that we can
-          ensure consistency in the reviews. We will send out the details once
-          you accept that invitation.
+          As a reviewer, you will have approximately 15 days to assess
+          approximately 10-12 applications at most. To facilitate your review
+          process, the SSGSA Applications Team will furnish you with detailed
+          instructions via a separate email upon receipt of your gracious
+          approval.
           
           <br /><br />
-          Should you have any questions about the review process. You can
-          either write to me at kkashif@alumni.purdue.edu or the Chair at
-          chair@ssgsa.us.
+          Should you have any inquiries or require further clarification
+          regarding the review process, please do not hesitate to reach out to
+          us at chair@ssgsa.us. We are here to assist you in any way possible.
 
           <br /><br />
-          Thanks,
+          Thank you for considering our invitation. Your participation as a
+          reviewer would be invaluable to us and to the applicants of the SSGSA.
+
+          <br /><br />
+          Warm regards,
           <br />
-          Kashif Ahmad
+          Sachin Gupta & Sajad Shiekh
           <br />
-          On behalf of SSGSA Applications Team
+          Co-Chairs, Sir Syed Global Scholar Award (SSGSA)
         </p>
       </body>
     </html>
@@ -71,7 +80,7 @@ const sendRevConfirmationMail = (email: string, name: string) => {
     to: email,
     cc: 'chair@ssgsa.us',
     replyTo: 'chair@ssgsa.us',
-    subject: '[SSGSA] Request to Review Applications',
+    subject: '[SSGSA] Invitation to Serve as a Reviewer for the Sir Syed Global Scholar Award',
     html: template,
   };
   
@@ -83,7 +92,7 @@ const sendRevConfirmationMail = (email: string, name: string) => {
 }
 
 
-const sendRevSetsMail = (email: string, name: string, sets: string) => {
+const sendRevSetsMail = (email: string, name: string, password: string) => {
   let mailTransporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -99,79 +108,71 @@ const sendRevSetsMail = (email: string, name: string, sets: string) => {
           ------------------------------------------------------------------
           <br />
           This is an auto-generated email from the SSGSA Application Portal.
-          Please write to us at contact@ssgsa.us or chair@ssgsa.us if you have
-          questions.
+          Please write to us at chair@ssgsa.us if you have questions.
           <br />
           ------------------------------------------------------------------
           <br />
         </p>
         <p>
           Dear ${name},
-          <br />
+
+          <br /><br />
           Greetings!
           
           <br /><br />
-          We thank you again for agreeing to review the applications for the
-          SSGSA Application Cycle 2023-24. We have allotted 10 to 15
-          applications for you to review.
+          Thank you for agreeing to participate in reviewing the applications
+          for the SSGSA Application Cycle 2024-25. We appreciate your
+          commitment to this process.
 
           <br /><br />
-          If you have reviewed the SSGSA applications in the past, you will
-          mostly know the drill but there are a few updates that you must take
-          note of. We held an orientation session for the same on Feb 18, 2023
-          and we are providing the link to the slides and recording from our
-          orientation for your reference.
+          You have been allocated 10 to 15 applications for review. To assist
+          you in this task, we have provided detailed instructions and a grading
+          rubric. We kindly request that you review these materials before
+          beginning your evaluations to ensure consistency in our assessments.
 
           <br /><br />
-          <b>Video:
-          https://drive.google.com/file/d/1LyHx2Ey55Yd5InmFJwUSdL7OrQI-W_El/view?usp=sharing
-          </b>
+          Please find the link to the orientation slides containing the instructions and rubric:
+          <br />
+          https://docs.google.com/presentation/d/1fnvufdZQJi3O_nTSU-8dzjrT85r5DFbP/
 
           <br /><br />
-          <b>Slides:
-          https://docs.google.com/presentation/d/1lU7OPCbw1oifRJLxrwj7I5_FmyIs8C28/edit?usp=sharing&ouid=117039052523548927361&rtpof=true&sd=true
-          </b>
+          We have made minor revisions to the grading rubric to enhance grading
+          consistency. You can download the updated rubric by logging in to the
+          application portal. <b>Within the portal, there are specific columns
+          designated for entering grades based on the rubric criteria.</b>
 
           <br /><br />
-          <b>We strongly encourage you to have a look at orientation slides and
-          recording before you start reviewing.</b>
-
-          <br /><br />
-          We have minor revisions to the grading rubric with details to bring
-          more consistency in grading. You can download the rubric by logging
-          in to the portal. Then, there are specific columns for entering the
-          grades from each section as per the rubric.
-
-          <br /><br />
-          <b>Link to the portal: https://www.ssgsa.us/reviewer</b>
+          Access the portal using the following credentials:
+          <br />
+          <b>Link:</b> https://www.ssgsa.us/reviewer
           
           <br /><br />
           <b>Username:</b> ${email}
           <br />
-          <b>Password:</b> The password you created at the time of signup. If
-          you don’t remember that, you have an option to reset it when you
-          click on portal
+          <b>Password:</b> ${password}
 
           <br /><br />
-          <b>Deadline:</b> March 10, 2022
+          <b>The deadline for completing your reviews is April 01, 2024.</b>
+          Should you have any questions or require assistance, please do not
+          hesitate to contact us at chair@ssgsa.us.
 
           <br /><br />
-          You have been allotted <b>Set ${sets}</b>. Please let us know if
-          it is different from the set in the portal or have any issues, please
-          do not hesitate to contact us at : contact@ssgsa.us or chair@ssgsa.us.
+          We kindly ask that you endeavor to complete your reviews before the
+          deadline. In the event that you are unable to review the assigned
+          applications, please notify us at least a week before the deadline.
+          This advance notice allows us to arrange for alternative reviewers,
+          ensuring the quality and timeliness of our decision-making process.
           
           <br /><br />
-          Please try to complete the reviews before the deadline. If for any
-          reason, you are unable to review the allotted applications, <b>please
-          reach out to us at least a week before the deadline</b>. It becomes
-          difficult to arrange for alternate reviewers at the last moment,
-          causing issues in the review quality and inordinate delays in our
-          decisions.
+          Thank you once again for your valuable contribution to the SSGSA
+          application review process.
 
           <br /><br />
           Best Regards,
           <br />
-          SSGSA Applications Team
+          Sachin Gupta & Sajad Shiekh
+          <br />
+          Co-chair SSGSA
         </p>
       </body>
     </html>
@@ -205,16 +206,22 @@ export const sendReviewerSetsMail =
   functions.https.onRequest((request, response) => {
     const email = request.query.email
     const name = request.query.name
-    let sets = request.query.sets
+    const password = request.query.password
+
+    if (!email || !password) {
+      functions.logger.warn(
+        `Email/Password not provided for ${email} (Name: ${name} )`,
+        { structuredData: true }
+      )
+      response.status(400).send("Email & Password are required")
+      return
+    }
 
     functions.logger.info(
-      'Sending sets mail to reviewer ' +
-      email + ' with data as (Name: ' +
-      name + ' and Sets: ' +
-      sets + ')',
+      `Sending sets mail to reviewer ${email} (Name: ${name} )`,
       { structuredData: true }
     )
-    sendRevSetsMail(String(email), String(name), String(sets))
-      .then(() => response.status(200).send("Mail Sent to " + name))
-      .catch(() => response.status(400).send("Error occured while sending mail to " + name))
+    sendRevSetsMail(String(email), String(name), String(password))
+      .then(() => response.status(200).send("Mail Sent to " + email))
+      .catch(() => response.status(400).send("Error occured while sending mail to " + email))
   })
