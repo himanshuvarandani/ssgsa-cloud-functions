@@ -28,48 +28,60 @@ const sendRevConfirmationMail = (email: string, name: string) => {
           Greetings!
           
           <br /><br />
-          On behalf of the Sir Syed Global Scholar Award (SSGSA), we extend our
-          sincere appreciation for your steadfast support of our mentorship and
-          scholarship initiatives throughout recent years.
+          On behalf of the Sir Syed Global Scholar Award (SSGSA), we sincerely
+          appreciate your support to our program to empower aspiring students
+          for higher education abroad.
 
           <br /><br />
-          We are reaching out to you today to extend an invitation to
-          participate as a reviewer for the upcoming session of the SSGSA.
-          Applications for this session are now open and are set to close on
-          <b>March 11, 2024</b>. Our aim is to dispatch the applications for
-          review by <b>March 18, 2024</b>. Your confirmation to serve as a
-          reviewer for this session would be greatly valued.
+          We are reaching out to invite you to serve as a reviewer for the
+          upcoming SSGSA application cycle for the session 2025-26.
+          Applications for this session are currently open and will close on
+          <b>March 08, 2025</b>. We plan to distribute applications for review
+          by <b>March 16, 2024</b>, and your participation in this process
+          would be greatly valued.
 
           <br /><br />
-          To confirm your willingness to participate, kindly click on the link
-          provided below:
+          To confirm your willingness to serve as a reviewer, please click on
+          the link below:
 
           <br /><br />
           <b>Reviewer Confirmation Link:
           https://www.ssgsa.us/reviewer/confirmation/${email}</b>
           
           <br /><br />
-          As a reviewer, you will have approximately 15 days to assess
-          approximately 10-12 applications at most. To facilitate your review
-          process, the SSGSA Applications Team will furnish you with detailed
-          instructions via a separate email upon receipt of your gracious
-          approval.
+          Review Process:
+          <br />
+          <ul>
+            <li>
+              You will be assigned approximately 10-12 applications at most.
+              It should not take more than 3 hours in total to review all the
+              applications.
+            </li>
+            <li>
+              You will have around 15 days to review the applications.
+            </li>
+            <li>
+              The SSGSA Applications Team will provide you with detailed
+              guidelines via a separate email once you confirm your
+              participation.
+            </li>
+          </ul>
+
+          <br />
+          If you have any questions or need further clarification regarding the
+          review process, please feel free to reach out to us at
+          application.ssgsa@gmail.com or chair@ssgsa.us.
           
           <br /><br />
-          Should you have any inquiries or require further clarification
-          regarding the review process, please do not hesitate to reach out to
-          us at chair@ssgsa.us. We are here to assist you in any way possible.
-
-          <br /><br />
-          Thank you for considering our invitation. Your participation as a
-          reviewer would be invaluable to us and to the applicants of the SSGSA.
+          Thank you for considering our invitation. Your support as a reviewer
+          would be invaluable to both SSGSA and the students we serve.
 
           <br /><br />
           Warm regards,
           <br />
           Sachin Gupta & Sajad Shiekh
           <br />
-          Co-Chairs, Sir Syed Global Scholar Award (SSGSA)
+          Co-Chairs SSGSA
         </p>
       </body>
     </html>
@@ -80,7 +92,7 @@ const sendRevConfirmationMail = (email: string, name: string) => {
     to: email,
     cc: 'chair@ssgsa.us',
     replyTo: 'chair@ssgsa.us',
-    subject: '[SSGSA] Invitation to Serve as a Reviewer for the Sir Syed Global Scholar Award',
+    subject: '[SSGSA] Invitation to Serve as a Reviewer for Application Cycle 2025-26',
     html: template,
   };
   
