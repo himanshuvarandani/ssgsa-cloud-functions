@@ -132,26 +132,22 @@ const sendRevSetsMail = (email: string, name: string, password: string) => {
           Greetings!
           
           <br /><br />
-          Thank you for agreeing to participate in reviewing the applications
-          for the SSGSA Application Cycle 2024-25. We appreciate your
-          commitment to this process.
+          Thank you for participating in the application review process for the
+          SSGSA Application Cycle 2025-26. We appreciate your commitment to
+          this holistic application review process.
 
           <br /><br />
           You have been allocated 10 to 15 applications for review. To assist
           you in this task, we have provided detailed instructions and a grading
-          rubric. We kindly request that you review these materials before
-          beginning your evaluations to ensure consistency in our assessments.
+          rubric (<a href='https://shorturl.at/OlHp2'>link to material</a>). We
+          kindly request that you review these materials before beginning your
+          evaluations to ensure consistency in our assessments. We would request
+          you to dedicate at least 10-15 mins for the review of each application
+          for ensuring the high standard of the application review process.
 
           <br /><br />
-          Please find the link to the orientation slides containing the instructions and rubric:
-          <br />
-          https://docs.google.com/presentation/d/1fnvufdZQJi3O_nTSU-8dzjrT85r5DFbP/
-
-          <br /><br />
-          We have made minor revisions to the grading rubric to enhance grading
-          consistency. You can download the updated rubric by logging in to the
-          application portal. <b>Within the portal, there are specific columns
-          designated for entering grades based on the rubric criteria.</b>
+          <b>Within the portal, there are specific columns designated for
+          entering grades based on the rubric criteria.</b>
 
           <br /><br />
           Access the portal using the following credentials:
@@ -164,9 +160,10 @@ const sendRevSetsMail = (email: string, name: string, password: string) => {
           <b>Password:</b> ${password}
 
           <br /><br />
-          <b>The deadline for completing your reviews is April 01, 2024.</b>
-          Should you have any questions or require assistance, please do not
-          hesitate to contact us at chair@ssgsa.us.
+          <b>The deadline for completing your reviews is Saturday March 29,
+          2025.</b> Should you have any questions or require assistance, please
+          do not hesitate to contact us at chair@ssgsa.us or
+          application.ssgsa@gmail.com.
 
           <br /><br />
           We kindly ask that you endeavor to complete your reviews before the
@@ -195,7 +192,7 @@ const sendRevSetsMail = (email: string, name: string, password: string) => {
     to: email,
     cc: 'chair@ssgsa.us',
     replyTo: 'chair@ssgsa.us',
-    subject: '[SSGSA] Credentials for Reviewing Applications',
+    subject: '[SSGSA] Invitation to Serve as a Reviewer for Application Cycle 2025-26',
     html: template,
   };
   
